@@ -1,0 +1,22 @@
+DIVIDE AND CONQUER ASSIGNMENT – PYTHON CODE AND PSEUDOCODE
+
+This ZIP contains Tasks 1–7. Each task folder contains:
+1. A Python implementation (.py)
+2. Pseudocode (.md)
+
+How to run:
+- Install Python 3 if it is not already installed.
+- Open a terminal in the task folder.
+- Run: python filename.py
+- Enter the input when prompted.
+
+Task list:
+Task 1: Maximum and Minimum using Divide and Conquer
+Task 2: Merge Sort and Quick Sort
+Task 3: Karatsuba Multiplication
+Task 4: Strassen Matrix Multiplication
+Task 5: Closest Pair of Points
+Task 6: Median of Medians and Meet in the Middle
+Task 7: Maximum Subarray using Divide and Conquer
+
+All programs use only Python's standard library.
