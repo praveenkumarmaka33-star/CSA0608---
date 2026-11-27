@@ -1,5 +1,0 @@
-Delivery locations excluding hub (1..9): Enter cost matrix:
-Optimal route Hub -> 4 -> 2 -> 6 -> 5 -> 3 -> 1 -> Hub
-Minimum cost=70
-Transitions evaluated=486
-DP table cells=896
