@@ -1,0 +1,4 @@
+#include <stdio.h>
+#include <string.h>
+void match(const char *t,const char *p){int n=strlen(t),m=strlen(p),c=0,found=0;printf("Text length=%d Pattern length=%d\\n",n,m);if(m==0||m>n){puts("No valid alignment.");return;}for(int i=0;i<=n-m;i++){int j=0;while(j<m){c++;if(t[i+j]!=p[j])break;j++;}if(j==m){printf("Match at index %d\\n",i);found++;}}printf("Matches=%d Character comparisons=%d\\n",found,c);}
+int main(){puts("Case 1: early mismatch");match("ZXQWERTYUIOP","ABC");puts("\\nCase 2: repeated-prefix worst pattern");match("AAAAAAAAAAAAAAAAAB","AAAAB");puts("\\nCase 3: exact occurrence");match("SYSTEM ALERT: T-184 FOUND","T-184");return 0;}

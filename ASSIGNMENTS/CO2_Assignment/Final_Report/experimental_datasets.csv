@@ -1,0 +1,20 @@
+Question,Dataset,Input,Expected focus
+Q1,Sorted,1 2 3 4 5 6 7 8,Insertion and optimized bubble should stop early
+Q1,Reverse,8 7 6 5 4 3 2 1,Many shifts/swaps
+Q1,Nearly sorted,1 2 3 5 4 6 7 8,Small disorder
+Q2,Success first,T-101,1 comparison
+Q2,Success middle,T-220,3 comparisons
+Q2,Success last,T-305,4 comparisons
+Q2,Failure,T-999,4 comparisons
+Q3,Early mismatch,ZXQWERTYUIOP / ABC,Low comparisons per alignment
+Q3,Repeated prefix,AAAAAAAAAAAAAAAAAB / AAAAB,Repeated partial matches
+Q3,Log signature,SYSTEM ALERT: T-184 FOUND / T-184,Exact signature match
+Q4,Small,5 points,10 unique pairs
+Q4,Medium,8 points,28 unique pairs
+Q4,Larger,12 points,66 unique pairs
+Q5,Interior points,square corners plus interior points,Interior points excluded
+Q5,Irregular,8-point irregular configuration,Challenge boundary detection
+Q6,Small,4 packages,16 subsets
+Q6,Medium,10 packages,1024 subsets
+Q6,Larger,16 packages,65536 subsets
+Q7,Clustered diagonal points,12 points,Compare all pairs with local candidates

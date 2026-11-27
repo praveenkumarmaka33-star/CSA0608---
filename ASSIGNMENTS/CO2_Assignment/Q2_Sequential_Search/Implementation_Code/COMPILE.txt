@@ -1,0 +1,2 @@
+Compile: gcc -std=c11 -O2 main.c -o program -lm
+Run: ./program (Linux/macOS) or program.exe (Windows)

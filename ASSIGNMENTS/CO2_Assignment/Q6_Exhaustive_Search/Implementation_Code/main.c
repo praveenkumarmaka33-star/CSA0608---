@@ -1,0 +1,4 @@
+#include <stdio.h>
+typedef struct{int id,weight,value;} Package;
+void solve(Package p[],int n,int cap){long long total=1LL<<n;int best=0,bw=0,bmask=0;for(long long mask=0;mask<total;mask++){int w=0,v=0;for(int i=0;i<n;i++)if(mask&(1LL<<i)){w+=p[i].weight;v+=p[i].value;}if(w<=cap&&v>best){best=v;bw=w;bmask=(int)mask;}}printf("n=%d candidates=%lld best value=%d weight=%d selected:",n,total,best,bw);for(int i=0;i<n;i++)if(bmask&(1<<i))printf(" P%d",p[i].id);puts("");}
+int main(){Package small[]={{1,2,6},{2,3,10},{3,4,12},{4,1,3}};solve(small,4,6);Package medium[10];for(int i=0;i<10;i++)medium[i]=(Package){i+1,1+(i*7)%9,3+(i*11)%17};solve(medium,10,20);Package larger[16];for(int i=0;i<16;i++)larger[i]=(Package){i+1,1+(i*7)%9,3+(i*11)%17};solve(larger,16,35);return 0;}

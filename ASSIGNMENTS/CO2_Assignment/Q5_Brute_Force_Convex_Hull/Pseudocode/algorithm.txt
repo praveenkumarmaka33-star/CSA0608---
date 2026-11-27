@@ -1,0 +1,16 @@
+ALGORITHM BruteForceHull(P, n)
+  edges ← empty set
+  FOR each unordered pair (P[i], P[j]), i < j
+    hasPositive ← false; hasNegative ← false
+    FOR each point P[k], k ≠ i and k ≠ j
+      cross ← (P[j].x-P[i].x)*(P[k].y-P[i].y)
+               - (P[j].y-P[i].y)*(P[k].x-P[i].x)
+      IF cross > 0: hasPositive ← true
+      IF cross < 0: hasNegative ← true
+    IF NOT (hasPositive AND hasNegative)
+      add candidate boundary segment (i,j)
+  Remove duplicate/collinear interior edge complications
+  Order hull vertices counter-clockwise around centroid
+  RETURN hull vertices
+  // For this teaching prototype, use distinct points with no three collinear
+  // boundary points; collinear edge points are reported as boundary candidates.

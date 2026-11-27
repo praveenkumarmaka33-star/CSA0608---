@@ -1,0 +1,1 @@
+Points=5 pairs=10 distance calculations=10\nClosest: (0,0) and (1,1), distance=1.4142\nPoints=8 pairs=28 distance calculations=28\nClosest: (20,20) and (21,20), distance=1.0000\nPoints=12 pairs=66 distance calculations=66\nClosest: (800,800) and (801,800), distance=1.0000\n

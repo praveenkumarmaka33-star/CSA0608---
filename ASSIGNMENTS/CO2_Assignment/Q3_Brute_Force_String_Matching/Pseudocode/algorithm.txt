@@ -1,0 +1,12 @@
+ALGORITHM BruteForceMatch(text, pattern)
+  n ← length(text); m ← length(pattern); comparisons ← 0
+  FOR shift ← 0 TO n-m
+    j ← 0
+    WHILE j < m
+      comparisons ← comparisons + 1
+      IF text[shift+j] ≠ pattern[j] THEN BREAK
+      j ← j+1
+    END WHILE
+    IF j = m THEN REPORT shift
+  END FOR
+  RETURN matches, comparisons

@@ -1,0 +1,15 @@
+ORIGINAL: examine every unordered pair and compute its Euclidean distance.
+
+REDESIGN: spatial-grid candidate filtering (prototype)
+  1. Divide the 2-D plane into square cells of chosen width w.
+  2. Insert each point into its cell using integer cell coordinates.
+  3. For each point, inspect points in its own cell and neighbouring cells.
+  4. Compute exact Euclidean distance only for candidate pairs.
+  5. Use a canonical pair ordering (i < j) to avoid duplicate comparisons.
+  6. Keep the smallest exact distance found.
+
+Important: this grid prototype is a heuristic candidate filter unless a
+valid distance bound and adaptive cell strategy are maintained. To guarantee
+the exact closest pair, use a current best distance d and inspect every cell
+whose bounding box can be within d of the current point; update d as closer
+pairs are found. Worst-case work can still be quadratic when points cluster.

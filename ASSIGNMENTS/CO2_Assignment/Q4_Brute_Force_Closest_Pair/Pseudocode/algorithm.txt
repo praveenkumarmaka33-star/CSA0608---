@@ -1,0 +1,11 @@
+ALGORITHM ClosestPair(P, n)
+  bestDistance ← infinity; bestPair ← none; pairCount ← 0
+  FOR i ← 0 TO n-2
+    FOR j ← i+1 TO n-1
+      pairCount ← pairCount + 1
+      dx ← P[i].x - P[j].x; dy ← P[i].y - P[j].y
+      d ← sqrt(dx*dx + dy*dy)
+      IF d < bestDistance
+        bestDistance ← d; bestPair ← (i,j)
+  RETURN bestPair, bestDistance, pairCount
+  // j starts at i+1, so each unordered pair is examined once.

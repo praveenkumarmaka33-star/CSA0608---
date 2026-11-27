@@ -1,0 +1,1 @@
+Original brute force: 66 distance calculations, closest distance 0.2000\nGrid candidate filter: 40 distance calculations, closest distance 0.2000\nNote: this fixed-neighbour prototype is not a universal exact guarantee; see report for safe adaptive-bound requirement.

@@ -1,0 +1,4 @@
+Case 1: early mismatch
+Text length=12 Pattern length=3\nMatches=0 Character comparisons=10\n\nCase 2: repeated-prefix worst pattern
+Text length=18 Pattern length=5\nMatch at index 13\nMatches=1 Character comparisons=70\n\nCase 3: exact occurrence
+Text length=25 Pattern length=5\nMatch at index 14\nMatches=1 Character comparisons=27\n

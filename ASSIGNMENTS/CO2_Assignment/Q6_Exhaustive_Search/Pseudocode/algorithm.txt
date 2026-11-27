@@ -1,0 +1,11 @@
+ALGORITHM ExhaustiveAirlift(packages, n, capacity)
+  bestValue ← 0; bestMask ← 0; candidates ← 2^n
+  FOR mask ← 0 TO 2^n - 1
+    totalWeight ← 0; totalValue ← 0
+    FOR i ← 0 TO n-1
+      IF bit i of mask is 1
+        totalWeight ← totalWeight + packages[i].weight
+        totalValue ← totalValue + packages[i].value
+    IF totalWeight ≤ capacity AND totalValue > bestValue
+      bestValue ← totalValue; bestMask ← mask
+  RETURN bestMask, bestValue, candidates

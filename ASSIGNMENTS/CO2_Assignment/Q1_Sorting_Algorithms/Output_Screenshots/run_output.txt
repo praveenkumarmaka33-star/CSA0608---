@@ -1,0 +1,12 @@
+\nAlready sorted: 1 2 3 4 5 6 7 8 
+Selection comparisons=28 movements/swaps=0 result: 1 2 3 4 5 6 7 8 
+Bubble comparisons=7 movements/swaps=0 result: 1 2 3 4 5 6 7 8 
+Insertion comparisons=7 movements/swaps=7 result: 1 2 3 4 5 6 7 8 
+\nReverse sorted: 8 7 6 5 4 3 2 1 
+Selection comparisons=28 movements/swaps=4 result: 1 2 3 4 5 6 7 8 
+Bubble comparisons=28 movements/swaps=28 result: 1 2 3 4 5 6 7 8 
+Insertion comparisons=28 movements/swaps=35 result: 1 2 3 4 5 6 7 8 
+\nNearly sorted: 1 2 3 5 4 6 7 8 
+Selection comparisons=28 movements/swaps=1 result: 1 2 3 4 5 6 7 8 
+Bubble comparisons=13 movements/swaps=1 result: 1 2 3 4 5 6 7 8 
+Insertion comparisons=8 movements/swaps=8 result: 1 2 3 4 5 6 7 8 
