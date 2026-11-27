@@ -1,0 +1,108 @@
+CO5 ASSIGNMENT 5 – EXPERIMENTAL OUTPUTS
+========================================
+
+B1 actual executions:
+### triangle_3col.txt
+Input order
+Result: COLOURABLE
+Search nodes: 6
+Candidate assignments: 9
+Rejected branches: 4
+Backtracks: 0
+Maximum depth: 5
+Colouring: v1=C1 v2=C2 v3=C3 v4=C1 v5=C2
+Degree-descending order
+Result: COLOURABLE
+Search nodes: 6
+Candidate assignments: 11
+Rejected branches: 6
+Backtracks: 0
+Maximum depth: 5
+Colouring: v1=C3 v2=C2 v3=C1 v4=C2 v5=C3
+
+
+### triangle_2col.txt
+Input order
+Result: NOT COLOURABLE
+Search nodes: 5
+Candidate assignments: 10
+Rejected branches: 6
+Backtracks: 4
+Maximum depth: 2
+Degree-descending order
+Result: NOT COLOURABLE
+Search nodes: 5
+Candidate assignments: 10
+Rejected branches: 6
+Backtracks: 4
+Maximum depth: 2
+
+
+### empty_graph.txt
+Input order
+Result: COLOURABLE
+Search nodes: 5
+Candidate assignments: 4
+Rejected branches: 0
+Backtracks: 0
+Maximum depth: 4
+Colouring: v1=C1 v2=C1 v3=C1 v4=C1
+Degree-descending order
+Result: COLOURABLE
+Search nodes: 5
+Candidate assignments: 4
+Rejected branches: 0
+Backtracks: 0
+Maximum depth: 4
+Colouring: v1=C1 v2=C1 v3=C1 v4=C1
+
+
+B2 actual execution:
+Graph A (8-vertex path): COLOURABLE
+Nodes=9 Attempts=12 Rejected=4 Backtracks=0
+Graph B (K4 core with four attached vertices): NOT COLOURABLE
+Nodes=16 Attempts=48 Rejected=33 Backtracks=15
+
+B3 actual execution:
+
+Instance 1 (zones=4, centres=4)
+Exact optimum: 2; exact subsets examined: 16; selected centres: 1 2
+Greedy trace:
+  Greedy choice 1 covers 2 new zones
+  Greedy choice 2 covers 2 new zones
+Greedy cover size: 2
+Greedy selection steps: 2
+
+Instance 2 (zones=6, centres=4)
+Exact optimum: 2; exact subsets examined: 16; selected centres: 1 2
+Greedy trace:
+  Greedy choice 1 covers 3 new zones
+  Greedy choice 2 covers 3 new zones
+Greedy cover size: 2
+Greedy selection steps: 2
+
+Instance 3 (greedy counterexample) (zones=6, centres=3)
+Exact optimum: 2; exact subsets examined: 8; selected centres: 2 3
+Greedy trace:
+  Greedy choice 1 covers 4 new zones
+  Greedy choice 2 covers 1 new zones
+  Greedy choice 3 covers 1 new zones
+Greedy cover size: 3
+Greedy selection steps: 3
+
+Larger instance (zones=8, centres=8)
+Exact optimum: 3; exact subsets examined: 256; selected centres: 1 2 3
+Greedy trace:
+  Greedy choice 1 covers 3 new zones
+  Greedy choice 2 covers 3 new zones
+  Greedy choice 3 covers 2 new zones
+Greedy cover size: 3
+Greedy selection steps: 3
+
+B4 actual execution:
+First-Fit Decreasing result
+Servers used: 4
+Server 1: 7 3 | Used=10 | Remaining=0
+Server 2: 6 4 | Used=10 | Remaining=0
+Server 3: 5 5 | Used=10 | Remaining=0
+Server 4: 4 2 | Used=6 | Remaining=4

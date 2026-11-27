@@ -1,0 +1,11 @@
+Input:
+8 10
+7 6 5 5 4 4 3 2
+
+Output:
+First-Fit Decreasing result
+Servers used: 4
+Server 1: 7 3 | Used=10 | Remaining=0
+Server 2: 6 4 | Used=10 | Remaining=0
+Server 3: 5 5 | Used=10 | Remaining=0
+Server 4: 4 2 | Used=6 | Remaining=4

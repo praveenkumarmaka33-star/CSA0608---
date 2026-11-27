@@ -1,0 +1,53 @@
+### triangle_3col.txt
+Input order
+Result: COLOURABLE
+Search nodes: 6
+Candidate assignments: 9
+Rejected branches: 4
+Backtracks: 0
+Maximum depth: 5
+Colouring: v1=C1 v2=C2 v3=C3 v4=C1 v5=C2
+Degree-descending order
+Result: COLOURABLE
+Search nodes: 6
+Candidate assignments: 11
+Rejected branches: 6
+Backtracks: 0
+Maximum depth: 5
+Colouring: v1=C3 v2=C2 v3=C1 v4=C2 v5=C3
+
+
+### triangle_2col.txt
+Input order
+Result: NOT COLOURABLE
+Search nodes: 5
+Candidate assignments: 10
+Rejected branches: 6
+Backtracks: 4
+Maximum depth: 2
+Degree-descending order
+Result: NOT COLOURABLE
+Search nodes: 5
+Candidate assignments: 10
+Rejected branches: 6
+Backtracks: 4
+Maximum depth: 2
+
+
+### empty_graph.txt
+Input order
+Result: COLOURABLE
+Search nodes: 5
+Candidate assignments: 4
+Rejected branches: 0
+Backtracks: 0
+Maximum depth: 4
+Colouring: v1=C1 v2=C1 v3=C1 v4=C1
+Degree-descending order
+Result: COLOURABLE
+Search nodes: 5
+Candidate assignments: 4
+Rejected branches: 0
+Backtracks: 0
+Maximum depth: 4
+Colouring: v1=C1 v2=C1 v3=C1 v4=C1

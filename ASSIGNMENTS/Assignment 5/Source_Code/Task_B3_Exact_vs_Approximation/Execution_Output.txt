@@ -1,0 +1,34 @@
+
+Instance 1 (zones=4, centres=4)
+Exact optimum: 2; exact subsets examined: 16; selected centres: 1 2
+Greedy trace:
+  Greedy choice 1 covers 2 new zones
+  Greedy choice 2 covers 2 new zones
+Greedy cover size: 2
+Greedy selection steps: 2
+
+Instance 2 (zones=6, centres=4)
+Exact optimum: 2; exact subsets examined: 16; selected centres: 1 2
+Greedy trace:
+  Greedy choice 1 covers 3 new zones
+  Greedy choice 2 covers 3 new zones
+Greedy cover size: 2
+Greedy selection steps: 2
+
+Instance 3 (greedy counterexample) (zones=6, centres=3)
+Exact optimum: 2; exact subsets examined: 8; selected centres: 2 3
+Greedy trace:
+  Greedy choice 1 covers 4 new zones
+  Greedy choice 2 covers 1 new zones
+  Greedy choice 3 covers 1 new zones
+Greedy cover size: 3
+Greedy selection steps: 3
+
+Larger instance (zones=8, centres=8)
+Exact optimum: 3; exact subsets examined: 256; selected centres: 1 2 3
+Greedy trace:
+  Greedy choice 1 covers 3 new zones
+  Greedy choice 2 covers 3 new zones
+  Greedy choice 3 covers 2 new zones
+Greedy cover size: 3
+Greedy selection steps: 3

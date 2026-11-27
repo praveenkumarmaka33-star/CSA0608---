@@ -1,0 +1,4 @@
+Graph A (8-vertex path): COLOURABLE
+Nodes=9 Attempts=12 Rejected=4 Backtracks=0
+Graph B (K4 core with four attached vertices): NOT COLOURABLE
+Nodes=16 Attempts=48 Rejected=33 Backtracks=15
