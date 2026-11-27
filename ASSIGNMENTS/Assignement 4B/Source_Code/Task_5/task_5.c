@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define N 6
+#define M 10
+typedef struct{int u,v,w;}E;E e[M]={{0,1,4},{0,2,3},{1,2,1},{1,3,2},{2,3,4},{2,4,5},{3,4,2},{3,5,6},{4,5,3},{1,5,7}};char*nm[N]={"A","B","C","D","E","F"};int par[N],rk[N];
+int find(int x){return par[x]==x?x:(par[x]=find(par[x]));}int join(int a,int b){a=find(a);b=find(b);if(a==b)return 0;if(rk[a]<rk[b])par[a]=b;else if(rk[a]>rk[b])par[b]=a;else par[b]=a,rk[a]++;return 1;}void init(){for(int i=0;i<N;i++)par[i]=i,rk[i]=0;}int cmp(const void*a,const void*b){return ((E*)a)->w-((E*)b)->w;}void show(E x){printf("%s-%s(%d) ",nm[x.u],nm[x.v],x.w);}
+int main(){E s[M];for(int i=0;i<M;i++)s[i]=e[i];qsort(s,M,sizeof(E),cmp);int sum=0,c=0;init();puts("Kruskal accepted edges:");for(int i=0;i<M&&c<N-1;i++)if(join(s[i].u,s[i].v)){show(s[i]);sum+=s[i].w;c++;}printf("\nKruskal cost=%d\n",sum);
+int used[N]={0},best[N],p[N];for(int i=0;i<N;i++)best[i]=99999,p[i]=-1;best[0]=0;sum=0;puts("Prim accepted edges:");for(int z=0;z<N;z++){int u=-1;for(int i=0;i<N;i++)if(!used[i]&&(u<0||best[i]<best[u]))u=i;used[u]=1;if(p[u]>=0){E x={p[u],u,best[u]};show(x);sum+=best[u];}for(int i=0;i<M;i++){int v=e[i].u==u?e[i].v:e[i].v==u?e[i].u:-1;if(v>=0&&!used[v]&&e[i].w<best[v])best[v]=e[i].w,p[v]=u;}}printf("\nPrim cost=%d\n",sum);
+init();sum=0;c=0;int round=1;puts("Boruvka rounds:");while(c<N-1){int cheap[N];for(int i=0;i<N;i++)cheap[i]=-1;for(int i=0;i<M;i++){int a=find(e[i].u),b=find(e[i].v);if(a!=b){if(cheap[a]<0||e[i].w<e[cheap[a]].w)cheap[a]=i;if(cheap[b]<0||e[i].w<e[cheap[b]].w)cheap[b]=i;}}int merged=0;printf("Round %d: ",round++);for(int i=0;i<N;i++)if(cheap[i]>=0&&join(e[cheap[i]].u,e[cheap[i]].v)){show(e[cheap[i]]);sum+=e[cheap[i]].w;c++;merged++;}puts("");if(!merged)break;}printf("Boruvka cost=%d\n",sum);puts("Equal-weight cycle edges can produce different valid MST edge sets with the same total cost.");}

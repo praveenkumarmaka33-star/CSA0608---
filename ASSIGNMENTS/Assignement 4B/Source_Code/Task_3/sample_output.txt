@@ -1,0 +1,43 @@
+Dijkstra finalisation:
+A:0 C:3 B:4 D:9 E:11 F:14 G:15 H:18 
+A dist=0 pred=-
+B dist=4 pred=A
+C dist=3 pred=A
+D dist=9 pred=B
+E dist=11 pred=C
+F dist=14 pred=E
+G dist=15 pred=E
+H dist=18 pred=G
+Negative edge B->E=-20. Prediction: E may be finalised early via C-D-E before B is processed; Dijkstra is unsafe.
+negative edge pass 1 changed=1
+negative edge pass 2 changed=0
+Reachable negative cycle: NO
+A=0 B=10 C=1 D=2 E=-10 F=-8 G=999999 H=999999 
+Reachable cycle B->C=2,C->D=2,D->B=-5 has total -1:
+cycle pass 1 changed=1
+cycle pass 2 changed=1
+cycle pass 3 changed=1
+cycle pass 4 changed=1
+cycle pass 5 changed=1
+cycle pass 6 changed=1
+cycle pass 7 changed=1
+Reachable negative cycle: YES
+
+Floyd distances:
+   0   4   3   9  11  14  15  18
+   4   0   1   5   7  10  11  14
+   3   1   0   6   8  11  12  15
+   9   5   6   0   2   5   6   9
+  11   7   8   2   0   3   4   7
+  14  10  11   5   3   0   2   5
+  15  11  12   6   4   2   0   3
+  18  14  15   9   7   5   3   0
+Warshall reachability:
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 

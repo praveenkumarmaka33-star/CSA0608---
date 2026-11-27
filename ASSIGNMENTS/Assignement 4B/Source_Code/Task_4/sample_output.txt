@@ -1,0 +1,7 @@
+Stations: Station 2: L1 stay=18 transfer=23 -> 18; L2 stay=17 transfer=16 -> 16
+Station 3: L1 stay=21 transfer=20 -> 20; L2 stay=22 transfer=27 -> 22
+Station 4: L1 stay=24 transfer=28 -> 24; L2 stay=26 transfer=25 -> 25
+Minimum production time=27
+Route: Entry -> L1-S1 -> L2-S2 -> L1-S3 -> L1-S4 -> Exit
+Transfer before station 2
+Transfer before station 3

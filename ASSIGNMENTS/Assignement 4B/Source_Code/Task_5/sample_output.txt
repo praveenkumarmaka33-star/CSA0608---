@@ -1,0 +1,10 @@
+Kruskal accepted edges:
+B-C(1) B-D(2) D-E(2) A-C(3) E-F(3) 
+Kruskal cost=11
+Prim accepted edges:
+A-C(3) C-B(1) B-D(2) D-E(2) E-F(3) 
+Prim cost=11
+Boruvka rounds:
+Round 1: A-C(3) B-C(1) B-D(2) D-E(2) E-F(3) 
+Boruvka cost=11
+Equal-weight cycle edges can produce different valid MST edge sets with the same total cost.

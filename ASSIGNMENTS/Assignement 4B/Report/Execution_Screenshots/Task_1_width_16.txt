@@ -1,0 +1,13 @@
+Word count and line width: DP suffix costs:
+dp[0]=142 next=1
+dp[1]=61 next=2
+dp[2]=36 next=4
+dp[3]=0 next=5
+dp[4]=0 next=5
+dp[5]=0 next=5
+Layout:
+Line 1: Dynamic | unused=9 penalty=81
+Line 2: programming | unused=5 penalty=25
+Line 3: makes good | unused=6 penalty=36
+Line 4: solutions | unused=7 penalty=0
+Minimum penalty=142

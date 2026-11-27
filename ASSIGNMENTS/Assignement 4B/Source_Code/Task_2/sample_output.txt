@@ -1,0 +1,9 @@
+Count capacity: Fractional greedy:
+A fraction 1.00
+D fraction 1.00
+B fraction 1.00
+C fraction 0.50
+Fractional value 250.00 decisions 4\n0/1 ratio-greedy heuristic:
+commit A (w=10,v=60)\ncommit D (w=5,v=30)\ncommit B (w=20,v=100)\n0/1 ratio-greedy value=190 (remaining capacity=15)\n0/1 DP selected:
+B C 
+Optimal value 220; states 204
