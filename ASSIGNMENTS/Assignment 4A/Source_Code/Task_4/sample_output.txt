@@ -1,0 +1,1 @@
+Enter text (no spaces): Enter number of dictionary words: Enter dictionary word: Enter dictionary word: Can the text be segmented? TRUE

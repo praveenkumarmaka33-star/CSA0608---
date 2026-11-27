@@ -1,0 +1,6 @@
+Enter number of jobs: Enter job ID, deadline and profit: Enter job ID, deadline and profit: Enter job ID, deadline and profit: Enter job ID, deadline and profit: Enter job ID, deadline and profit: 
+Final schedule:
+Slot 1: C
+Slot 2: A
+Slot 3: D
+Maximum total profit: 180

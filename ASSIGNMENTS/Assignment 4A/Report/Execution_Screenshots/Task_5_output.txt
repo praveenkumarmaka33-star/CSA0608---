@@ -1,0 +1,13 @@
+Dijkstra shortest distances from A:
+A to A = 0
+A to B = 4
+A to C = 6
+A to D = 7
+A to E = 10
+Bellman-Ford reachable negative cycle: NO
+Floyd-Warshall distance matrix (INF = unreachable):
+    0    4    6    7   10
+  INF    0    2    3    6
+  INF  INF    0    1    4
+  INF  INF  INF    0    3
+  INF  INF  INF  INF    0

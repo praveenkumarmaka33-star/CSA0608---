@@ -1,0 +1,7 @@
+Enter number of packages: Enter vehicle capacity: Enter package ID, weight and value: Enter package ID, weight and value: Enter package ID, weight and value: 
+Selected fractions (descending value/weight):
+P1: 1.00 (100.00%)
+P2: 1.00 (100.00%)
+P3: 0.67 (66.67%)
+Maximum total value: 240.00
+Unused capacity: 0.00

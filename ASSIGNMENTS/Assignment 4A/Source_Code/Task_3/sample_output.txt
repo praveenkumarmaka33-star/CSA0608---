@@ -1,0 +1,3 @@
+Enter number of items: Enter capacity: Enter item ID number, weight and value: Enter item ID number, weight and value: Enter item ID number, weight and value: Enter item ID number, weight and value: 
+Maximum value: 45
+Selected items (input order): Item2 Item3 

@@ -1,0 +1,3 @@
+Enter number of jobs: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: Enter job ID, start, finish and energy-saving value: 
+Jobs selected: J2 J5 J7 J8 
+Maximum total energy saving: 200
